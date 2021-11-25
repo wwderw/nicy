@@ -58,7 +58,7 @@ let
 
 proc zeroWidth*(s: string): string =
   if shellName == "bash":
-    return fmt"\[{s}\]"
+    return fmt"{s}"
   else:
     # zsh, default
     return fmt"%{{{s}%}}"
